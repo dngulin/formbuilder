@@ -5,7 +5,7 @@ LaTeX package for flexable making graphical forms. Provide macro for define `For
 For example try to build document with this code:
 
 ```
-\documentclass[a4paper]{article}
+\documentclass{article}
 
 \usepackage{formbuilder}
 \NewFormStyle{test}{top=5cm}{\put(30mm,30mm){NEW FORM STYLE!}}
