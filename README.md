@@ -46,3 +46,5 @@ Package defaults:
 \put(15mm,5mm)   {\slshape FORMBUILDER DEFAULT STYLE}}
 \SetFormStyle{default}
 ```
+
+Also package sets default pagestyle to `empty`.
