@@ -1,6 +1,6 @@
 ## FormBuilder 1.0
 
-LaTeX package for flexable making graphical forms. Provide macro for define `FormStyle{<setup code>}{<drawings>}` (that define setup code and background draw hook in picture environment with 0,0 at bottom left corner of sheet) and provide set-style command: `ApplyFormStyle`. Apply of new style execute `\clearpage`, then execute setup style code and change draw background hook.
+LaTeX package for flexable making graphical forms. Provide macro for define command `\NewFormStyle{<setup code>}{<drawings>}` (background draw hook executes in `picture` environment with 0,0 coordinate at bottom left corner of sheet) and provide set-style macro: `ApplyFormStyle`. Apply of new style execute `\clearpage`, then execute setup style code and change draw background hook.
 
 For example try to build document with this code:
 
@@ -63,4 +63,6 @@ Package defaults:
 \ApplyFormStyle{formbuilder}
 ```
 
-Also package sets default pagestyle to `empty`.
+Also package sets default pagestyle to `empty` and page size to `a4paper` (for default style).
+
+Package required: `geometry`, `atbegshi`, `picture`;
