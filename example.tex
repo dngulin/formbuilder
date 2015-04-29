@@ -1,0 +1,39 @@
+%%% example.tex
+\documentclass{extarticle}
+\usepackage{formbuilder}
+
+\NewFormStyle{mystyle}
+	{ %
+		\newgeometry{noheadfoot,nomarginpar,top=5cm,bottom=5cm,inner=2cm,outer=2cm}}
+	{ %
+		\linethickness{1.5mm} %
+		\put(15mm,40mm)  {\line(1,0){180mm}} %
+		\put(20mm,35mm){\textbf{My form style}}} %
+
+\begin{document}
+
+    A
+    \vfill
+    A
+
+    \newpage
+    B
+    \vfill
+    B
+    
+    \newpage
+    C
+    \vfill
+    C
+
+    \ApplyFormStyle{mystyle}
+    D
+    \vfill
+    D
+
+    \newpage
+    E
+    \vfill
+    E
+
+\end{document}
