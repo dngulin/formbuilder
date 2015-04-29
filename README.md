@@ -1,6 +1,6 @@
 ## FormBuilder 1.0
 
-LaTeX package for flexable making graphical forms. Provide macro for define command `\NewFormStyle{<setup code>}{<drawings>}` (background draw hook executes in `picture` environment with 0,0 coordinate at bottom left corner of sheet) and provide set-style macro: `ApplyFormStyle`. Apply of new style execute `\clearpage`, then execute setup style code and change draw background hook.
+LaTeX package for flexable making graphical forms. Provide macro for define command `\NewFormStyle{<style name>}{<setup code>}{<drawings>}` (background draw hook executes in `picture` environment with 0,0 coordinate at bottom left corner of sheet) and provide set-style macro: `\ApplyFormStyle{<style name>}`. Applying of new style execute `\clearpage` macro, then execute setup style code and change background drawing hook.
 
 For example try to build document with this code:
 
